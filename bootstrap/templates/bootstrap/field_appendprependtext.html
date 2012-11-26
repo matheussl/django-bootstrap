@@ -3,6 +3,7 @@
     <div class="controls">
         <div class="input-append input-prepend">
             {{ bf }}
+            {% if bf_raw.field.required %}*{% endif %}
             {% if errors %}
                 <span class="help-inline">{{ errors }}</span>
             {% endif %}
